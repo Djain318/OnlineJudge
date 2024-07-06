@@ -99,7 +99,7 @@ const deleteCodeById = async codeId => {
 
 // Authorization
 const isAdmin = username => {
-    return (username === 'aman');
+    return (username === 'darshan');
 }
 const isGuest = username => {
     return (!username || (username === 'guest'));
