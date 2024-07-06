@@ -28,24 +28,21 @@ const Footer = () => {
     return (
         <Fragment>
             <Box sx={{ borderBottom: '1.5px solid rgba(0,0,0,0.1)' }}>
-                <span onClick={() => clickHandler("https://www.instagram.com/am4n_arya", 'Instagram')}>
-                    <Instagram className={classes.logos} />
-                </span>
-                <span onClick={() => clickHandler("https://github.com/Am4nn", 'Github')}>
+                <span onClick={() => clickHandler("https://github.com/Djain318", 'Github')}>
                     <GitHub className={classes.logos} />
                 </span>
-                <span onClick={() => clickHandler("https://www.linkedin.com/in/aman-arya-79a52121b", 'LinkedIn')}>
+                <span onClick={() => clickHandler("https://www.linkedin.com/in/darshanjain318/", 'LinkedIn')}>
                     <LinkedIn className={classes.logos} />
                 </span>
-                <span onClick={() => clickHandler("mailto:125aryaaman@gmail.com", 'Mail')}>
+                <span onClick={() => clickHandler("mailto:darshanjain318@gmail.com", 'Mail')}>
                     <Mail className={classes.logos} />
                 </span>
             </Box>
             <div>Copyright © {new Date().getFullYear()} All rights reserved</div>
-            <div>Made with ❤️ by <a onClick={() => propogate("Name-LinkedIn")} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/aman-arya-79a52121b" target="_blank" rel="noopener noreferrer">
-                Aman Arya
+            <div>Made with ❤️ by <a onClick={() => propogate("Name-LinkedIn")} style={{ textDecoration: 'none' }} href="https://www.linkedin.com/in/darshanjain318/" target="_blank" rel="noopener noreferrer">
+                darshan
             </a></div>
-            <div>Give this website a <a onClick={() => propogate("Star-Github")} style={{ textDecoration: 'none' }} href="https://github.com/Am4nn/Online-Judge-Project" target="_blank" rel="noopener noreferrer">
+            <div>Give this website a <a onClick={() => propogate("Star-Github")} style={{ textDecoration: 'none' }} href="https://github.com/Djain318/OnlineJudge" target="_blank" rel="noopener noreferrer">
                 ⭐ <span style={{ color: 'black' }}>on</span> GitHub
             </a></div>
         </Fragment>
