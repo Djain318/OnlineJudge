@@ -10,23 +10,26 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 #  Use the environment variables in your application code
-ENV NODE_ENV=production
+ENV NODE_ENV=c
 ENV PORT=5000
 ENV CONTAINERIZED=true
 
 # Create a directory for the Node.js server code
 WORKDIR /app
 
-# Install the dependencies
-RUN npm install
-
 # Copy the Node.js server code into the container
 COPY . .
 
-RUN npm run build
+# Install the dependencies
+RUN npm install
+# RUN service docker start
+# RUN docker pull gcc:latest
+# RUN docker pull python:3.10-slim
+# RUN docker pull node:16.17.0-bullseye-slim
+# RUN docker pull openjdk:20-slim
 
 # Expose the necessary ports
 EXPOSE 5000
 
 # Start the Node.js server
-CMD ["npm", "start"]
+CMD ["/bin/bash", "-c", "redis-server & npm start"]
