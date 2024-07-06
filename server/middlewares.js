@@ -83,9 +83,9 @@ const registerValidator = async (req, res, next) => {
                 error: "Please enter the same password twice.",
             });
 
-        if (username.toLowerCase().includes('aman')) {
+        if (username.toLowerCase().includes('darshan')) {
             return res.status(400).json({
-                error: "These Usernames (including 'aman') are reserved for Admin Only !"
+                error: "These Usernames (including 'darshan') are reserved for Admin Only !"
             });
         }
 
