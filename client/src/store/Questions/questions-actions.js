@@ -1,11 +1,13 @@
 import { SERVER_LINK } from '../../dev-server-link';
 import { questionsActions } from './questions-slice'
 
+const EXTERNAL_API_URL = 'https://oj-server.amanarya.com/api/explore/problems';
+
 export const fetchQuestionListData = () => {
     return async dispatch => {
         const fetchData = async () => {
             const response = await fetch(
-                `${SERVER_LINK}/api/explore/problems`,
+                EXTERNAL_API_URL,
                 {
                     headers: {
                         'Content-Type': 'application/json'
